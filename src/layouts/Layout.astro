@@ -22,9 +22,19 @@ const { title } = Astro.props;
         <title>{title}</title>
         <meta name="viewport" content="width=device-width" />
         <meta name="generator" content={Astro.generator} />
+        <meta property="og:title" content="Sharing Title" />
+        <meta property="og:url" content="https://html-test-playground.netlify.app/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:description" content="Some description for my sharing preview." />
         <meta property="og:image" content="https://html-test-playground.netlify.app/images/cat.jpg" />
+        <meta property="og:image:width" content="3648" />
+        <meta property="og:image:height" content="5472" />
         <meta property="og:image" content="https://html-test-playground.netlify.app/images/corgi.jpg" />
+        <meta property="og:image:width" content="2400" />
+        <meta property="og:image:height" content="1600" />
         <meta property="og:image" content="https://html-test-playground.netlify.app/images/rabbit.jpg" />
+        <meta property="og:image:width" content="5087" />
+        <meta property="og:image:height" content="3814" />
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <link rel="preload" as="font" type="font/woff2" href={interFont400} crossorigin />
         <link rel="preload" as="font" type="font/woff2" href={interFont800} crossorigin />
